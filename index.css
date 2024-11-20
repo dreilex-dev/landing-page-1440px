@@ -1,0 +1,467 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 41px 222px 76px 222px;
+}
+
+.footer-right {
+  display: flex;
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: right;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  gap: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif, Arial;
+}
+
+body {
+  margin: auto;
+  background: linear-gradient(236.56deg, #2C2D65 0.35%, #201F22 100%);
+  max-width: 1440px;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.top-right-image {
+  position: absolute;
+  top: -112px;
+  left: 839px;
+  width: 730px;
+  height: 747px;
+  background-image: url("assets/image-top-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 31px 119px 0 124px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #ffffff;
+}
+
+.logo p {
+  color: #E6606C;
+}
+
+nav ul {
+  display: flex;
+  gap: 33px;
+}
+
+nav li {
+  display: list-item;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #ffffff;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 233px 0px 0px 120px;
+  position: relative;
+  z-index: 1;
+  max-width: 503px;
+  height: 324px;
+}
+
+.h1-intro {
+  color: #ffffff;
+  font-size: 62px;
+  font-weight: 300;
+  line-height: 76.8px;
+  letter-spacing: 0.045em;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.h2-intro {
+  color: #E8AB36;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  letter-spacing: 0.045em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  margin-top: 21px;
+}
+
+.p-intro {
+  color: #EFEFEF;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.045em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-top: 21px;
+}
+
+.intro-container::before {
+  content: "";
+  position: absolute;
+  width: 142px; /* Lățimea imaginii */
+  height: 153px; /* Înălțimea imaginii */
+  background-image: url("assets/before-intro-container.png");
+  background-size: cover; /* Asigură că imaginea acoperă complet dimensiunile */
+  background-position: center; /* Centrează imaginea */
+  background-repeat: no-repeat; /* Asigură că imaginea nu se repetă */
+  left: -43px;
+  top: -48px;
+}
+
+.intro-container::after {
+  content: "";
+  position: absolute;
+  width: 184px; /* Lățimea imaginii */
+  height: 181px; /* Înălțimea imaginii */
+  background-image: url("assets/after-intro-container.png");
+  background-size: cover; /* Asigură că imaginea acoperă complet dimensiunile */
+  background-position: center; /* Centrează imaginea */
+  background-repeat: no-repeat; /* Asigură că imaginea nu se repetă */
+  top: 204px;
+  left: 291px;
+}
+
+.btn {
+  display: inline-flex;
+  width: 152px;
+  height: 43px;
+  border-radius: 75px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 16.8px;
+  letter-spacing: 0.045em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-gt {
+  background-color: #E6606C;
+  color: #ffffff;
+}
+
+.btn-km {
+  background-color: #EFEFEF;
+  color: #000;
+  margin-left: 24px;
+}
+
+.intro-btns {
+  margin-top: 21px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mid-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 175px 135px 0px 120px;
+}
+
+.mc-l img {
+  width: 730px;
+  height: 747px;
+  background-image: url("assets/mc-l.png");
+  background-size: cover;
+}
+
+.mc-l {
+  margin-right: 145px;
+}
+
+.mc-r {
+  width: 470;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mc-r-h3 {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.mc-r-h1 {
+  color: #ffffff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  width: 321px;
+  margin-top: 16px;
+}
+
+.mc-r-h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-top: 30px;
+}
+
+.mc-r-p {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 28px 0px 28px 0px;
+}
+
+.mc-r-ell {
+  width: 210px;
+  height: 210px;
+  background-color: none;
+  border-radius: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.1019607843);
+  position: absolute;
+  bottom: 221px;
+  right: 28px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  margin: 92px 155px 0px 115px;
+  position: relative;
+}
+
+.b-c-t {
+  display: flex;
+  width: 570px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.b-c-t h1,
+.b-c-t p {
+  text-align: center;
+  width: 100%;
+}
+
+.bottom-container::before {
+  content: "";
+  position: absolute;
+  width: 142px; /* Lățimea imaginii */
+  height: 153px; /* Înălțimea imaginii */
+  background-image: url("assets/before-intro-container.png");
+  background-size: cover; /* Asigură că imaginea acoperă complet dimensiunile */
+  background-position: center; /* Centrează imaginea */
+  background-repeat: no-repeat; /* Asigură că imaginea nu se repetă */
+  left: 307px;
+  top: -16px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.b-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 432px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.0784313725);
+  background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
+  z-index: 0;
+}
+
+.card-prop {
+  width: 100%;
+  height: 240px;
+  background-size: cover; /* Se asigură că imaginea acoperă complet elementul */
+  background-position: center; /* Centrează imaginea în div */
+  background-repeat: no-repeat; /* Previne repetarea imaginii */
+  z-index: 1;
+}
+
+.b-card-img-1 {
+  background-image: url("assets/b-card-1.png");
+}
+
+.b-card-img-2 {
+  background-image: url("assets/b-card-2.png");
+}
+
+.b-card-img-3 {
+  background-image: url("assets/b-card-3.png");
+}
+
+.b-card-p {
+  color: #FFFFFF;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32p;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 38px 32px 0px 32px;
+  text-align: left;
+}
+
+.b-card-date {
+  color: rgba(255, 255, 255, 0.5019607843);
+  margin: 20px 0px 0px 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.last-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 113px 221px 0px 221px;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.l-c-menu {
+  margin: 0px 0px 0px 180px;
+}
+
+.l-c-service {
+  margin: 0px 0px 0px 189px;
+}
+
+.l-c-menu p:first-of-type,
+.l-c-service p:first-of-type {
+  margin-top: 16px;
+}
+
+.l-c-m-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #ffffff;
+}
+
+.l-c-social {
+  margin: 0px 0px 0px 180px;
+  display: flex;
+  width: 100%;
+}
+
+.l-c-social a {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: #6357F6;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.l-c-social a:nth-child(2) {
+  color: #ffffff;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+hr {
+  width: 996px;
+  height: 1px;
+  margin: 113px 221px 0px 221px;
+  margin-top: 30px;
+  width: 996px;
+  opacity: 0.08px;
+}/*# sourceMappingURL=index.css.map */
